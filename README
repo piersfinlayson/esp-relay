@@ -1,0 +1,29 @@
+#
+# esp-relay - Simple esp8266 relay program
+#
+# Copyright (C) 2016 Piers Finlayson
+#
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+Simple ESP8266 relay program - will turn on and off a relay at GPIO every TIMER milliseconds.
+
+Developed for use with a SRD-05VDC-SL-C relay module board, using a simple N-P-N transistor and 5k1 resistor:
+
+                  collector 5V --- relay +ve
+                           / 
+GPIO2 --- 5k1 --- base ---|
+                           \
+                            relay switch
+                                 |
+                                gnd --- relay -ve
